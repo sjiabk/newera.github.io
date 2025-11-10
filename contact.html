@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - CDS Contractors</title>
+  <meta name="description" content="Get in touch with CDS Contractors for your construction needs. Find our contact information, office locations, and send us a message.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="images/logo.png" alt="CDS Contractors Logo">
+          <h1>CDS Contractors</h1>
+        </div>
+        
+        <button class="mobile-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+        
+        <ul class="nav-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#testimonials">Testimonials</a></li>
+          <li><a href="index.html#careers">Careers</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-banner" style="background-image: url('images/contact-banner.jpg');">
+    <div class="container">
+      <div class="banner-content">
+        <h1>Contact Us</h1>
+        <p>We're here to answer your questions</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Info Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-intro text-center fade-in">
+        <h2>Get In Touch</h2>
+        <p class="lead">Have a question about our services or want to discuss your project? Reach out to us using any of the methods below, and our team will be happy to assist you.</p>
+      </div>
+      
+      <div class="contact-cards">
+        <div class="contact-card fade-in">
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h3>Our Main Office</h3>
+          <p>123 Construction Way<br>Building Plaza, Suite 400<br>Seattle, WA 98101</p>
+          <a href="https://maps.google.com" target="_blank" class="btn btn-outline">View on Map</a>
+        </div>
+        
+        <div class="contact-card fade-in">
+          <div class="contact-icon">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <h3>Phone Numbers</h3>
+          <p>Main: (555) 123-4567<br>Fax: (555) 123-4568<br>Emergency: (555) 123-4569</p>
+          <a href="tel:+15551234567" class="btn btn-outline">Call Now</a>
+        </div>
+        
+        <div class="contact-card fade-in">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h3>Email Us</h3>
+          <p>General: info@cdscontractors.com<br>Projects: projects@cdscontractors.com<br>Careers: careers@cdscontractors.com</p>
+          <a href="mailto:info@cdscontractors.com" class="btn btn-outline">Send Email</a>
+        </div>
+        
+        <div class="contact-card fade-in">
+          <div class="contact-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3>Business Hours</h3>
+          <p>Monday-Friday: 8:00 AM - 5:00 PM<br>Saturday: 9:00 AM - 2:00 PM<br>Sunday: Closed</p>
+          <a href="#" class="btn btn-outline">Schedule Call</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map & Form Section -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="map-form-container">
+        <div class="contact-map fade-in">
+          <h2>Find Us</h2>
+          <div class="map-container">
+            <!-- Replace with actual Google Maps embed code -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.2891789543705!2d-122.33551238436948!3d47.60506297918407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDM2JzE4LjIiTiAxMjLCsDIwJzA0LjciVw!5e0!3m2!1sen!2sus!4v1631898957782!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          
+          <div class="office-locations">
+            <h3>Our Offices</h3>
+            <div class="office-tabs">
+              <button class="office-tab active" data-office="seattle">Seattle (HQ)</button>
+              <button class="office-tab" data-office="portland">Portland</button>
+              <button class="office-tab" data-office="sanfrancisco">San Francisco</button>
+            </div>
+            
+            <div class="office-info active" id="seattle-office">
+              <h4>Seattle Headquarters</h4>
+              <p><i class="fas fa-map-marker-alt"></i> 123 Construction Way, Building Plaza, Suite 400, Seattle, WA 98101</p>
+              <p><i class="fas fa-phone-alt"></i> (555) 123-4567</p>
+              <p><i class="fas fa-envelope"></i> seattle@cdscontractors.com</p>
+            </div>
+            
+            <div class="office-info" id="portland-office">
+              <h4>Portland Office</h4>
+              <p><i class="fas fa-map-marker-alt"></i> 456 Builder Street, Portland, OR 97201</p>
+              <p><i class="fas fa-phone-alt"></i> (555) 234-5678</p>
+              <p><i class="fas fa-envelope"></i> portland@cdscontractors.com</p>
+            </div>
+            
+            <div class="office-info" id="sanfrancisco-office">
+              <h4>San Francisco Office</h4>
+              <p><i class="fas fa-map-marker-alt"></i> 789 Development Avenue, San Francisco, CA 94105</p>
+              <p><i class="fas fa-phone-alt"></i> (555) 345-6789</p>
+              <p><i class="fas fa-envelope"></i> sanfrancisco@cdscontractors.com</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form fade-in">
+          <h2>Send Us a Message</h2>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="service">Service of Interest</label>
+              <select id="service" name="service">
+                <option value="">Select a Service</option>
+                <option value="commercial">Commercial Construction</option>
+                <option value="residential">Residential Construction</option>
+                <option value="renovations">Renovations & Remodeling</option>
+                <option value="project-management">Project Management</option>
+                <option value="design-build">Design-Build Services</option>
+                <option value="consultation">Consultation & Planning</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Your Message *</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+            
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="newsletter" name="newsletter">
+              <label for="newsletter">Subscribe to our newsletter</label>
+            </div>
+            
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+            </div>
+          </form>
+          <div id="formStatus" class="form-status"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section">
+    <div class="container">
+      <div class="faq-container">
+        <h2 class="text-center fade-in">Frequently Asked Questions</h2>
+        <p class="text-center mb-4 fade-in">Find answers to our most commonly asked questions below</p>
+        
+        <div class="accordion fade-in">
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>What types of projects do you handle?</h3>
+              <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="accordion-content">
+              <p>CDS Contractors specializes in a wide range of construction projects, including commercial buildings, residential homes, renovations, remodeling, and custom builds. Our experienced team can handle projects of various sizes, from small residential renovations to large commercial developments.</p>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>How do I request a quote for my project?</h3>
+              <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="accordion-content">
+              <p>You can request a quote by filling out our contact form on this page, calling our main office, or sending an email to info@cdscontractors.com. Please provide as much detail about your project as possible to help us give you an accurate estimate. Our team will get back to you within 1-2 business days to discuss your project requirements.</p>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>What geographic areas do you serve?</h3>
+              <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="accordion-content">
+              <p>We primarily serve the Pacific Northwest region with offices in Seattle, Portland, and San Francisco. Our service areas extend to surrounding communities within approximately a 100-mile radius of each office. For larger projects, we may consider locations outside these areas. Please contact us to discuss your specific location.</p>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>How long does a typical construction project take?</h3>
+              <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="accordion-content">
+              <p>Project timelines vary significantly based on the scope, complexity, and size of the work. A small renovation might take a few weeks, while a large commercial building could take many months. During our initial consultation, we'll provide you with a realistic timeline based on your specific project requirements, taking into account factors like permitting, material procurement, and construction schedules.</p>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>Do you handle permits and approvals?</h3>
+              <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="accordion-content">
+              <p>Yes, as part of our comprehensive service, we handle all necessary permits and approvals for your project. Our team is experienced in navigating local building codes, zoning regulations, and approval processes. We'll take care of the paperwork and coordination with local authorities to ensure your project meets all legal requirements.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta" style="background-image: url('images/cta-bg.jpg');">
+    <div class="container">
+      <div class="cta-content text-center">
+        <h2 class="fade-in">Ready to Start Your Project?</h2>
+        <p class="fade-in">Contact us today for a free consultation. Let's bring your vision to life.</p>
+        <a href="#contact-form" class="btn btn-secondary btn-lg fade-in">Get Started Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <div class="footer-logo">
+            <img src="images/logo-white.png" alt="CDS Contractors Logo">
+          </div>
+          <p>CDS Contractors is a full-service construction company dedicated to delivering quality projects on time and within budget.</p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#testimonials">Testimonials</a></li>
+            <li><a href="index.html#careers">Careers</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="services.html#commercial">Commercial Construction</a></li>
+            <li><a href="services.html#residential">Residential Construction</a></li>
+            <li><a href="services.html#renovations">Renovations & Remodeling</a></li>
+            <li><a href="services.html#project-management">Project Management</a></li>
+            <li><a href="services.html#design-build">Design-Build Services</a></li>
+            <li><a href="services.html#consultation">Consultation & Planning</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-newsletter">
+          <h4>Subscribe to Our Newsletter</h4>
+          <p>Stay updated with our latest projects and news</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your Email Address" required>
+            <button type="submit" class="btn btn-secondary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 CDS Contractors. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+  <script>
+    // Contact form handling
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get form values
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      
+      // Form validation
+      if (!name || !email || !message) {
+        document.getElementById('formStatus').innerHTML = '<div class="alert alert-danger">Please fill all required fields.</div>';
+        return;
+      }
+      
+      // Simulate form submission (replace with actual form submission)
+      document.getElementById('formStatus').innerHTML = '<div class="alert alert-info">Sending your message...</div>';
+      
+      // Simulate success after 2 seconds
+      setTimeout(function() {
+        document.getElementById('formStatus').innerHTML = '<div class="alert alert-success">Thank you! Your message has been sent successfully. We\'ll get back to you soon.</div>';
+        document.getElementById('contactForm').reset();
+      }, 2000);
+    });
+    
+    // Office location tabs
+    document.querySelectorAll('.office-tab').forEach(tab => {
+      tab.addEventListener('click', function() {
+        // Remove active class from all tabs
+        document.querySelectorAll('.office-tab').forEach(t => t.classList.remove('active'));
+        // Add active class to clicked tab
+        this.classList.add('active');
+        
+        // Hide all office info
+        document.querySelectorAll('.office-info').forEach(info => info.classList.remove('active'));
+        // Show selected office info
+        const officeId = this.getAttribute('data-office') + '-office';
+        document.getElementById(officeId).classList.add('active');
+      });
+    });
+    
+    // Accordion functionality
+    document.querySelectorAll('.accordion-header').forEach(header => {
+      header.addEventListener('click', function() {
+        const item = this.parentElement;
+        const isActive = item.classList.contains('active');
+        
+        // Close all accordion items
+        document.querySelectorAll('.accordion-item').forEach(i => {
+          i.classList.remove('active');
+          i.querySelector('.accordion-icon i').className = 'fas fa-plus';
+        });
+        
+        // If clicked item wasn't active, open it
+        if (!isActive) {
+          item.classList.add('active');
+          this.querySelector('.accordion-icon i').className = 'fas fa-minus';
+        }
+      });
+    });
+  </script>
+</body>
+</html> 
