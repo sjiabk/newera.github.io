@@ -22,7 +22,7 @@
   /* Spacing */
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
-  --spacing-md: 2rem;
+  --spacing-md: 3rem;
   --spacing-lg: 3rem;
   --spacing-xl: 5rem;
   
@@ -569,7 +569,7 @@ ul {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
   gap: var(--spacing-md);
 }
 
