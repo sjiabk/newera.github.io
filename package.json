@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -16,5 +18,8 @@
     "react": "latest",
     "react-dom": "latest",
     "react-hook-form": "^7.50.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }

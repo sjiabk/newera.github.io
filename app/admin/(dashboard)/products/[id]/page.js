@@ -1,5 +1,12 @@
-import { getProductById } from '@/lib/db';
+import { getProductById, getProducts } from '@/lib/db';
 import ProductForm from '../../components/ProductForm';
+
+export async function generateStaticParams() {
+    const products = await getProducts();
+    return products.map((product) => ({
+        id: product.id,
+    }));
+}
 
 export default async function EditProductPage({ params }) {
     const { id } = await params;
