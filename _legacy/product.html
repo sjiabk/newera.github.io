@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товар - New Era</title>
+    <meta name="description" content="Описание товара New Era">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+        rel="stylesheet">
+    <script src="js/products.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.svg" alt="New Era Logo" class="logo__img">
+                <span class="logo__text">New Era</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">О нас</a></li>
+                    <li class="nav__item"><a href="catalog.html" class="nav__link">Каталог</a></li>
+                    <li class="nav__item"><a href="index.html#reviews" class="nav__link">Отзывы</a></li>
+                    <li class="nav__item"><a href="index.html#contact" class="nav__link">Контакты</a></li>
+                </ul>
+                <button class="nav__toggle" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="section product-details">
+            <div class="container">
+                <a href="catalog.html" class="back-link">&larr; Вернуться в каталог</a>
+
+                <div id="product-container" class="product-container">
+                    <!-- Content will be loaded dynamically -->
+                    <div class="product-image-col">
+                        <img id="p-image" src="" alt="" class="product-full-image">
+                    </div>
+                    <div class="product-info-col">
+                        <h1 id="p-title" class="product-title"></h1>
+                        <div class="product-meta">
+                            <span id="p-price" class="product-price"></span>
+                            <span id="p-pv" class="product-pv"></span>
+                        </div>
+                        <p id="p-description" class="product-description"></p>
+
+                        <div class="product-properties">
+                            <h3>Свойства:</h3>
+                            <ul id="p-properties" class="properties-list"></ul>
+                        </div>
+
+                        <div class="product-composition">
+                            <h3>Состав:</h3>
+                            <p id="p-composition"></p>
+                        </div>
+
+                        <div class="product-usage">
+                            <h3>Способ применения:</h3>
+                            <p id="p-usage"></p>
+                        </div>
+
+                        <a id="whatsapp-link" href="#" class="btn btn--primary whatsapp-btn" target="_blank">
+                            Заказать в WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__col">
+                <a href="index.html" class="logo">
+                    <span class="logo__text">New Era</span>
+                </a>
+                <p class="footer__desc">Независимый дистрибьютор.</p>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__title">Меню</h4>
+                <ul class="footer__links">
+                    <li><a href="index.html#hero">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="index.html#reviews">Отзывы</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__title">Соцсети</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link">VK</a>
+                    <a href="#" class="social-link">Telegram</a>
+                    <a href="#" class="social-link">YouTube</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2023 New Era Distributor. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Наверх">
+        &uarr;
+    </button>
+</body>
+
+</html>
